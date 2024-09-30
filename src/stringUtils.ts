@@ -9,13 +9,6 @@ export function isPalindrome(str: string): boolean {
     return str === reversedStr;
 }
 
-// Function to count the number of occurrences of a substring in a string
-export function countSubstringOccurrences(str: string, substring: string): number {
-    const regex = new RegExp(substring, 'g');
-    const matches = str.match(regex);
-    return matches ? matches.length : 0;
-}
-
 // Function to truncate a string to a specified length
 export function truncateString(str: string, maxLength: number): string {
     if (str.length <= maxLength) {
@@ -26,5 +19,5 @@ export function truncateString(str: string, maxLength: number): string {
 
 // Function to capitalize the first letter of each word in a string
 export function capitalizeWords(str: string): string {
-    return str.replace(/\b\w/g, (match) => match.toUpperCase());
+    return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 }

@@ -9,6 +9,13 @@ export function isPalindrome(str: string): boolean {
     return str === reversedStr;
 }
 
+// Function to count the number of occurrences of a substring in a string
+export function countSubstringOccurrences(str: string, substring: string): number {
+    const regex = new RegExp(substring, 'g');
+    const matches = str.match(regex);
+    return matches ? matches.length : 0;
+}
+
 // Function to truncate a string to a specified length
 export function truncateString(str: string, maxLength: number): string {
     if (str.length <= maxLength) {

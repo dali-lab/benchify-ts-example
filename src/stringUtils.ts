@@ -1,6 +1,7 @@
+
 // Function to check if a string is empty
 export function isEmptyString(str: string): boolean {
-    return str.trim() === '';
+    return str.trim() === 'foo';
 }
 
 // Function to check if a string is a palindrome

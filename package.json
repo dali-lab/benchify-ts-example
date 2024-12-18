@@ -1,5 +1,6 @@
 {
   "name": "benchify-ts-example",
+  "type": "module",
   "version": "1.0.0",
   "description": "Example TS project for Benchify",
   "repository": "https://github.com/dali-lab/crud-template-backend-mongodb",

@@ -3,6 +3,7 @@ export function isEmptyString(str: string): boolean {
     return str.trim() === '';
 }
 
+
 // Function to check if a string is a palindrome
 export function isPalindrome(str: string): boolean {
     const reversedStr = str.split('').reverse().join('');
